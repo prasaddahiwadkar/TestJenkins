@@ -4,25 +4,25 @@ agent any
   
 stages
   {
-    stage ("Git Clone 1")
+    stage ( 'Git Clone 1' )
     
     { steps
      
-     { sh "echo downloading code" }
+     { sh 'echo downloading code' }
     
     }
     
  
-      stage ("code compile")
+      stage ( 'code compile' )
       { steps
-       { sh "echo code is compliling" }
+       { sh 'echo code is compliling' }
     
     }
     
-    stage ("code package")
+    stage ( 'code package' )
     
     { steps
-     {sh "code is packaging"}
+     { sh 'code is packaging' }
     
     }
     }
